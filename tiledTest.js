@@ -130,6 +130,7 @@
 
 	}
 
+
 	function update(){
 
 		animationHandler=requestAnimationFrame(update);
@@ -141,7 +142,7 @@
 		if(teclas[keyboard.SPACE]){
 			for(inimigo of osInimigos){
 				inimigo.atacar();
-				
+
 			}
 		}
 
