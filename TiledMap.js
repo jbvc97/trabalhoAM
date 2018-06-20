@@ -257,6 +257,20 @@ var TiledMap = Class.extend(function () {
         return pkt;
     };
 
+    this.getLayerByName=function(layerName){
+      var reqLayer=null;
+      for(tLayer of this.currMapData.layers){
+        if(tLayer.name===layerName){
+          reqLayer=tLayer;
+          break;
+        }
+      }
+      return reqLayer;
+    }
+
+    this.getLayer=function(layerIdx){
+      return this.currMapData.layers[layerIdx];
+    }
     //-----------------------------------------
     // Draws all of the map data to the passed-in
     // canvas context, 'ctx'.

@@ -1,4 +1,4 @@
-var Tank = Entity.extend(function () {
+var Esqueleto = Entity.extend(function () {
 		this.currState = undefined; // estado atual;
 
 		var podeDisparar = false;
@@ -28,6 +28,7 @@ var Tank = Entity.extend(function () {
 
 			// passar � proxima frame e voltar a zero se chegar ao fim do array; M�todo mais eficiente pois utiliza s� opera��es
 			// aritm�ticas e n�o recorre a condi��es
+
 			this.currentFrame = (++this.currentFrame) % this.frames.length;
 
 			this.width = this.frames[this.currentFrame].width; //atualizar a altura
@@ -45,20 +46,15 @@ var Tank = Entity.extend(function () {
 		};
 
 		var setup = function () {
-//	ATACAR: 'attack',
-	MORRER: 'dead',
-	ATINGIDO: 'hit',
-	PARADO: 'idle',
-	REAGIR: 'react',
-	ANDAR: 'walk'
-			this.eStates['ATACAR'] = this.spriteSheet.getStats('attack');
-			this.eStates['MORRER'] = this.spriteSheet.getStats('dead');
-			this.eStates['ATINGIDO'] = this.spriteSheet.getStats('hit');
-			this.eStates['PARADO'] = this.spriteSheet.getStats('idle');
-			this.eStates['REAGIR'] = this.spriteSheet.getStats('react');
-			this.eStates['ANDAR'] = this.spriteSheet.getStats('walk');
 
+			this.eStates['attack'] = this.spriteSheet.getStats('attack');
+			this.eStates['dead'] = this.spriteSheet.getStats('dead');
+			this.eStates['hit'] = this.spriteSheet.getStats('hit');
+			this.eStates['idle'] = this.spriteSheet.getStats('idle');
+			this.eStates['react'] = this.spriteSheet.getStats('react');
+			this.eStates['walk'] = this.spriteSheet.getStats('walk');
 
+console.log(this.eStates[this.currState]);
 			this.frames = this.eStates[this.currState];
 			this.width = this.frames[0].width; //atualizar a altura
 			this.height = this.frames[0].height; // atualizar os

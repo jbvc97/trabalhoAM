@@ -72,8 +72,9 @@
 		tileBackground.load('./assets/mapa','mapa.json', loaded);
 
 		var spEsqueleto = new SpriteSheet();
-		spEsqueleto.load("assets//skeleton.png", "assets//skeleton.json", loaded);
-		assets.push(spTanque);
+		spEsqueleto.load("./assets/enemy/skeleton.png", "./assets/enemy/skeleton.json", loaded);
+		assets.push(spEsqueleto);
+	console.log(spEsqueleto);
 	}
 
 	function loaded(assetName) {
@@ -115,7 +116,8 @@
 
 		var entidades=tileBackground.getLayerByName("inimigo").objects;
 		for(umaEntidade of entidades){
-			var umInimigo = new Esqueleto(gSpriteSheets['assets//skeleton.png'], umaEntidade.x,umaEntidade.y);
+			
+			var umInimigo = new Esqueleto(gSpriteSheets['./assets/enemy/skeleton.png'], umaEntidade.x,umaEntidade.y);
 				osInimigos.push(umInimigo);
 				entities.push(umInimigo);
 
@@ -166,7 +168,9 @@
 				0,0,offscreenBackground.width,offscreenBackground.height,
 				0,0,offscreenBackground.width,offscreenBackground.height
 		);
-
+		for(entity of entities){
+			entity.render(canvases.background.ctx);
+		}
 	}
 
 })(); // não apagar
