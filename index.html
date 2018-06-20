@@ -10,15 +10,30 @@
         margin: auto;
       }
 
-      #canvas {
-        border: 1px solid red;
+      #background {
+        position: absolute;
+        z-index: 10;
+
       }
+
+      #entidades {
+        position: absolute;
+        z-index: 20;
+      }
+
+      #componentes {
+        position: absolute;
+        z-index: 30;
+      }
+
     </style>
     <script src="main.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="container">
-      <canvas id="canvas" width="1200" height="600"></canvas>
+      <canvas id="background" width="1200" height="600"></canvas>
+      <canvas id="entidades" width="1200" height="600"></canvas>
+      <canvas id="componentes" width="1200" height="600"></canvas>
     </div>
   </body>
 </html>
