@@ -18,7 +18,7 @@
 			ctx: null
 		}
 	};
-
+	var osInimigos = [];
 	var entities = [];
 	var teclas = new Array(255);
 
@@ -70,6 +70,10 @@
 
 		tileBackground= new TiledMap();
 		tileBackground.load('./assets/mapa','mapa.json', loaded);
+
+		var spEsqueleto = new SpriteSheet();
+		spEsqueleto.load("assets//skeleton.png", "assets//skeleton.json", loaded);
+		assets.push(spTanque);
 	}
 
 	function loaded(assetName) {
@@ -109,6 +113,13 @@
 		// nota: um canvas pode desenhar outro canvas, como se fosse uma imagem
 		tileBackground.draw(offscreenBackground.getContext("2d"));
 
+		var entidades=tileBackground.getLayerByName("inimigo").objects;
+		for(umaEntidade of entidades){
+			var umInimigo = new Esqueleto(gSpriteSheets['assets//skeleton.png'], umaEntidade.x,umaEntidade.y);
+				osInimigos.push(umInimigo);
+				entities.push(umInimigo);
+
+		}
 		gameState = GameStates.RUNNING;
 
 		window.addEventListener("keydown",  function(e){ teclas[e.keyCode]=true;},false);
