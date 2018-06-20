@@ -116,7 +116,7 @@
 
 		var entidades=tileBackground.getLayerByName("inimigo").objects;
 		for(umaEntidade of entidades){
-			
+
 			var umInimigo = new Esqueleto(gSpriteSheets['./assets/enemy/skeleton.png'], umaEntidade.x,umaEntidade.y);
 				osInimigos.push(umInimigo);
 				entities.push(umInimigo);
@@ -138,12 +138,19 @@
 		if(teclas[keyboard.RIGHT])tx-=5;
 		if(teclas[keyboard.UP])ty+=5;
 		if(teclas[keyboard.DOWN])ty-=5;
-
+		if(teclas[keyboard.SPACE]){
+			for(inimigo of osInimigos){
+				inimigo.atacar();
+				
+			}
+		}
 
 	   canvases.background.ctx.translate(tx,ty);
 	   tx=0;
 	   ty=0;
-
+		 for(entity of entities){
+			entity.update();
+		}
 
 	}
 

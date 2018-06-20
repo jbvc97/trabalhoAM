@@ -54,8 +54,9 @@ var Esqueleto = Entity.extend(function () {
 			this.eStates['react'] = this.spriteSheet.getStats('react');
 			this.eStates['walk'] = this.spriteSheet.getStats('walk');
 
-console.log(this.eStates[this.currState]);
+
 			this.frames = this.eStates[this.currState];
+			console.log(this.spriteSheet.getStats('attack'));
 			this.width = this.frames[0].width; //atualizar a altura
 			this.height = this.frames[0].height; // atualizar os
 
