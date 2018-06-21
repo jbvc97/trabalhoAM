@@ -79,7 +79,11 @@
 		var spMoeda = new SpriteSheet();
 		spMoeda.load("./assets/coin/coin.png", "./assets/coin/coin.json", loaded);
 		assets.push(spMoeda);
-	console.log(spMoeda);
+
+		var spPlayer = new SpriteSheet();
+		spPlayer.load("./assets/character/character.png", "./assets/character/character.json", loaded);
+		assets.push(spPlayer);
+	console.log(spPlayer);
 	}
 
 	function loaded(assetName) {
@@ -114,13 +118,22 @@
 		// apareça centrada no ecra
 		canvases.background.ctx.translate(-(offscreenBackground.width>>1),
 										-(offscreenBackground.height>>1));
-		canvases.background.ctx.scale(3,3);
+		canvases.background.ctx.scale(3.5,3.5);
 		// desenhar o tiledBackgroun num canvas em offscreen(não está no documento HTML)
 		// nota: um canvas pode desenhar outro canvas, como se fosse uma imagem
 		tileBackground.draw(offscreenBackground.getContext("2d"));
 
 		var inimigos=tileBackground.getLayerByName("inimigo").objects;
 		var moedas=tileBackground.getLayerByName("moedas").objects;
+		var player=tileBackground.getLayerByName("player").objects;
+
+		for(umaEntidade of player){
+
+			var oPlayer = new Player(gSpriteSheets['./assets/character/character.png'], umaEntidade.x,umaEntidade.y);
+				entities.push(oPlayer);
+
+		}
+
 		for(umaEntidade of inimigos){
 
 			var umInimigo = new Esqueleto(gSpriteSheets['./assets/enemy/skeleton.png'], umaEntidade.x,umaEntidade.y);
@@ -195,7 +208,9 @@
 		);
 		for(entity of entities){
 			entity.render(canvases.background.ctx);
+			entity.drawColisionBoundaries(canvases.background.ctx,true,true, "blue","red");
 		}
+
 	}
 
 })(); // não apagar

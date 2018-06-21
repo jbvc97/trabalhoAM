@@ -1,14 +1,18 @@
-var Esqueleto = Entity.extend(function () {
+var Player = Entity.extend(function () {
 		this.currState = undefined; // estado atual;
 
 		var podeDisparar = false;
 		this.states = {
-			ATACAR: 'attack',
-			MORRER: 'dead',
-			ATINGIDO: 'hit',
-			PARADO: 'idle',
-			REAGIR: 'react',
-			ANDAR: 'walk'
+			ATACAR_1: 'adventurer-attack1',
+			ATACAR_2: 'adventurer-attack2',
+			ATACAR_3: 'adventurer-attack3',
+			CORRER: 'adventurer-run',
+			PARADO: 'adventurer-idle',
+			SALTAR: 'adventurer-jump',
+			BAIXAR: 'adventurer-crouch',
+			CAIR: 'adventurer-fall',
+			ATINGIDO:'adventurer-hurt',
+			MORRER: 'adventurer-die'
 		};
 
 		this.constructor = function (spriteSheet, x, y) {
@@ -16,7 +20,7 @@ var Esqueleto = Entity.extend(function () {
 			this.x = x;
 			this.y = y;
 			this.spriteSheet = spriteSheet;
-			this.currState = this.states.MORRER;
+			this.currState = this.states.PARADO;
 			this.currentFrame = 0;
 			setup();
 		};
@@ -47,16 +51,20 @@ var Esqueleto = Entity.extend(function () {
 
 		var setup = function () {
 
-			this.eStates['attack'] = this.spriteSheet.getStats('attack');
-			this.eStates['dead'] = this.spriteSheet.getStats('dead');
-			this.eStates['hit'] = this.spriteSheet.getStats('hit');
-			this.eStates['idle'] = this.spriteSheet.getStats('idle');
-			this.eStates['react'] = this.spriteSheet.getStats('react');
-			this.eStates['walk'] = this.spriteSheet.getStats('walk');
+			this.eStates['adventurer-attack1'] = this.spriteSheet.getStats('adventurer-attack1');
+			this.eStates['adventurer-attack2'] = this.spriteSheet.getStats('adventurer-attack2');
+			this.eStates['adventurer-attack3'] = this.spriteSheet.getStats('adventurer-attack3');
+			this.eStates['adventurer-run'] = this.spriteSheet.getStats('adventurer-run');
+			this.eStates['adventurer-idle'] = this.spriteSheet.getStats('adventurer-idle');
+			this.eStates['adventurer-jump'] = this.spriteSheet.getStats('adventurer-jump');
+			this.eStates['adventurer-crouch'] = this.spriteSheet.getStats('adventurer-crouch');
+			this.eStates['adventurer-fall'] = this.spriteSheet.getStats('adventurer-fall');
+			this.eStates['adventurer-hurt'] = this.spriteSheet.getStats('adventurer-hurt');
+			this.eStates['adventurer-die'] = this.spriteSheet.getStats('adventurer-die');
 
 
 			this.frames = this.eStates[this.currState];
-			console.log(this.spriteSheet.getStats('attack'));
+			console.log(this.spriteSheet.getStats('adventurer-attack1'));
 			this.width = this.frames[0].width; //atualizar a altura
 			this.height = this.frames[0].height; // atualizar os
 

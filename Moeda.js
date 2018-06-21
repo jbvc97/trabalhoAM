@@ -26,7 +26,7 @@ var Moeda = Entity.extend(function () {
 				sprite.x, sprite.y,
 				sprite.width, sprite.height,
 				Math.floor(this.x), Math.floor(this.y),
-				Math.floor(this.width/2), Math.floor(this.height/2));
+				Math.floor(this.width/8), Math.floor(this.height/8));
 		};
 
 		this.update = function () {
@@ -60,33 +60,10 @@ var Moeda = Entity.extend(function () {
 			console.log(this.spriteSheet.getStats('rodar'));
 			this.width = this.frames[0].width; //atualizar a altura
 			this.height = this.frames[0].height; // atualizar os
-			console.log(	this.width);
-			console.log(	this.height);
+
 			// atualizar o array de frames atual
 
 		}.bind(this);
-
-		this.andar = function () {
-			toogleState(this.states.ANDAR);
-		};
-
-		this.parar = function () {
-			toogleState(this.states.PARADO);
-		};
-
-		this.atacar = function () {
-			toogleState(this.states.ATACAR);
-		};
-
-		this.atingido = function () {
-			toogleState(this.states.ATINGIDO);
-		};
-		this.morrer = function () {
-			toogleState(this.states.MORRER);
-		};
-		this.reagir = function () {
-			toogleState(this.states.REAGIR);
-		};
 
 		var toogleState = function (theState) {
 			if (this.killed)
