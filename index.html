@@ -4,6 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <script src="lib/extend.min.js" charset="utf-8"></script>
+    <script src="lib/AJAX.js" charset="utf-8"></script>
+    <script src="lib/keyboard.js" charset="utf-8"></script>
+    <script src="Entity.js" charset="utf-8"></script>
+    <script src="Camera.js" charset="utf-8"></script>
+    <script src="GameWorld.js" charset="utf-8"></script>
+    <script src="SpriteSheet.js" charset="utf-8"></script>
+    <script src="Tank.js" charset="utf-8"></script>
     <style media="screen">
       .container {
         max-width: 1200px;
@@ -16,12 +24,13 @@
 
       }
 
-      #entidades {
+      #entities {
         position: absolute;
         z-index: 20;
+        border: 1px solid red;
       }
 
-      #componentes {
+      #components {
         position: absolute;
         z-index: 30;
       }
@@ -32,8 +41,8 @@
   <body>
     <div class="container">
       <canvas id="background" width="1200" height="600"></canvas>
-      <canvas id="entidades" width="1200" height="600"></canvas>
-      <canvas id="componentes" width="1200" height="600"></canvas>
+      <canvas id="entities" width="1200" height="600"></canvas>
+      <canvas id="components" width="1200" height="600"></canvas>
     </div>
   </body>
 </html>
