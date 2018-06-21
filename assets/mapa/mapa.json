@@ -7,7 +7,7 @@
          "name":"folhas2",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":150,
          "x":0,
          "y":0
@@ -18,7 +18,7 @@
          "name":"folhas1",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":150,
          "x":0,
          "y":0
@@ -29,7 +29,7 @@
          "name":"Terreno",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":150,
          "x":0,
          "y":0
@@ -430,8 +430,8 @@
                  "type":"",
                  "visible":true,
                  "width":25,
-                 "x":236.749666666667,
-                 "y":226.666666666667
+                 "x":236.75,
+                 "y":226.667
                 }, 
                 {
                  "height":38,
@@ -518,7 +518,7 @@
                  "type":"",
                  "visible":true,
                  "width":25,
-                 "x":2112.12333333333,
+                 "x":2112.12,
                  "y":101
                 }, 
                 {

@@ -19,6 +19,7 @@
 		}
 	};
 	var osInimigos = [];
+	var asMoedas = [];
 	var entities = [];
 	var teclas = new Array(255);
 
@@ -74,7 +75,11 @@
 		var spEsqueleto = new SpriteSheet();
 		spEsqueleto.load("./assets/enemy/skeleton.png", "./assets/enemy/skeleton.json", loaded);
 		assets.push(spEsqueleto);
-	console.log(spEsqueleto);
+
+		var spMoeda = new SpriteSheet();
+		spMoeda.load("./assets/coin/coin.png", "./assets/coin/coin.json", loaded);
+		assets.push(spMoeda);
+	console.log(spMoeda);
 	}
 
 	function loaded(assetName) {
@@ -109,19 +114,31 @@
 		// apareça centrada no ecra
 		canvases.background.ctx.translate(-(offscreenBackground.width>>1),
 										-(offscreenBackground.height>>1));
-		canvases.background.ctx.scale(3.5,3.5);
+		canvases.background.ctx.scale(3,3);
 		// desenhar o tiledBackgroun num canvas em offscreen(não está no documento HTML)
 		// nota: um canvas pode desenhar outro canvas, como se fosse uma imagem
 		tileBackground.draw(offscreenBackground.getContext("2d"));
 
-		var entidades=tileBackground.getLayerByName("inimigo").objects;
-		for(umaEntidade of entidades){
+		var inimigos=tileBackground.getLayerByName("inimigo").objects;
+		var moedas=tileBackground.getLayerByName("moedas").objects;
+		for(umaEntidade of inimigos){
 
 			var umInimigo = new Esqueleto(gSpriteSheets['./assets/enemy/skeleton.png'], umaEntidade.x,umaEntidade.y);
 				osInimigos.push(umInimigo);
 				entities.push(umInimigo);
 
 		}
+
+		for(umaEntidade of moedas){
+
+			var umaMoeda = new Moeda(gSpriteSheets['./assets/coin/coin.png'], umaEntidade.x,umaEntidade.y);
+				asMoedas.push(umaMoeda);
+				entities.push(umaMoeda);
+
+		}
+
+
+
 		gameState = GameStates.RUNNING;
 
 		window.addEventListener("keydown",  function(e){ teclas[e.keyCode]=true;},false);
