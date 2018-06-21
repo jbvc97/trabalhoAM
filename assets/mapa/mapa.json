@@ -7,7 +7,7 @@
          "name":"folhas2",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":150,
          "x":0,
          "y":0
@@ -18,7 +18,7 @@
          "name":"folhas1",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":150,
          "x":0,
          "y":0
@@ -431,7 +431,7 @@
                  "visible":true,
                  "width":25,
                  "x":236.75,
-                 "y":230.667
+                 "y":225.667
                 }, 
                 {
                  "height":38,
@@ -442,7 +442,7 @@
                  "visible":true,
                  "width":25,
                  "x":445.667,
-                 "y":230
+                 "y":225
                 }, 
                 {
                  "height":38,
@@ -453,7 +453,7 @@
                  "visible":true,
                  "width":25,
                  "x":591.5,
-                 "y":230
+                 "y":225
                 }, 
                 {
                  "height":38,
@@ -464,7 +464,7 @@
                  "visible":true,
                  "width":25,
                  "x":1213.83,
-                 "y":134
+                 "y":129
                 }, 
                 {
                  "height":38,
@@ -475,7 +475,7 @@
                  "visible":true,
                  "width":25,
                  "x":1410.17,
-                 "y":198
+                 "y":193
                 }, 
                 {
                  "height":38,
@@ -486,7 +486,7 @@
                  "visible":true,
                  "width":25,
                  "x":1406.09,
-                 "y":22
+                 "y":17
                 }, 
                 {
                  "height":38,
@@ -497,7 +497,7 @@
                  "visible":true,
                  "width":25,
                  "x":1803.67,
-                 "y":230
+                 "y":225
                 }, 
                 {
                  "height":38,
@@ -508,7 +508,7 @@
                  "visible":true,
                  "width":25,
                  "x":1972.75,
-                 "y":246
+                 "y":241
                 }, 
                 {
                  "height":38,
@@ -519,7 +519,7 @@
                  "visible":true,
                  "width":25,
                  "x":2112.12,
-                 "y":101
+                 "y":96
                 }, 
                 {
                  "height":38,
@@ -530,7 +530,7 @@
                  "visible":true,
                  "width":25,
                  "x":1878.33,
-                 "y":54
+                 "y":49
                 }, 
                 {
                  "height":38,
@@ -541,7 +541,7 @@
                  "visible":true,
                  "width":25,
                  "x":1001,
-                 "y":38
+                 "y":33
                 }, 
                 {
                  "height":38,
@@ -552,7 +552,7 @@
                  "visible":true,
                  "width":25,
                  "x":1101.24,
-                 "y":38
+                 "y":33
                 }, 
                 {
                  "height":38,
@@ -563,7 +563,7 @@
                  "visible":true,
                  "width":25,
                  "x":419,
-                 "y":38
+                 "y":33
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -584,7 +584,7 @@
                  "visible":true,
                  "width":50,
                  "x":20,
-                 "y":231.5
+                 "y":225.5
                 }],
          "opacity":1,
          "type":"objectgroup",

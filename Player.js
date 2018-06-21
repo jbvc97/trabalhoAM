@@ -20,7 +20,7 @@ var Player = Entity.extend(function () {
 			this.x = x;
 			this.y = y;
 			this.spriteSheet = spriteSheet;
-			this.currState = this.states.PARADO;
+			this.currState = this.states.MORRER;
 			this.currentFrame = 0;
 			setup();
 		};
@@ -64,7 +64,7 @@ var Player = Entity.extend(function () {
 
 
 			this.frames = this.eStates[this.currState];
-			console.log(this.spriteSheet.getStats('adventurer-attack1'));
+			console.log(this.spriteSheet.getStats('adventurer-hurt'));
 			this.width = this.frames[0].width; //atualizar a altura
 			this.height = this.frames[0].height; // atualizar os
 

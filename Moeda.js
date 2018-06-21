@@ -26,7 +26,7 @@ var Moeda = Entity.extend(function () {
 				sprite.x, sprite.y,
 				sprite.width, sprite.height,
 				Math.floor(this.x), Math.floor(this.y),
-				Math.floor(this.width/8), Math.floor(this.height/8));
+				Math.floor(this.width), Math.floor(this.height));
 		};
 
 		this.update = function () {
