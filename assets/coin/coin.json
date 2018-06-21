@@ -2,281 +2,281 @@
 
 "rodar_1.png":
 {
-	"frame": {"x":1,"y":1,"w":24,"h":24},
+	"frame": {"x":1,"y":1,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
-	"sourceSize": {"w":24,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_2.png":
 {
-	"frame": {"x":1,"y":27,"w":24,"h":24},
+	"frame": {"x":491,"y":99,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
-	"sourceSize": {"w":24,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_3.png":
 {
-	"frame": {"x":1,"y":53,"w":24,"h":24},
+	"frame": {"x":1079,"y":1,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
-	"sourceSize": {"w":24,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_4.png":
 {
-	"frame": {"x":1,"y":79,"w":24,"h":24},
+	"frame": {"x":1177,"y":1,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
-	"sourceSize": {"w":24,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_5.png":
 {
-	"frame": {"x":1,"y":105,"w":24,"h":24},
+	"frame": {"x":1177,"y":99,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
-	"sourceSize": {"w":24,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_6.png":
 {
-	"frame": {"x":24,"y":183,"w":21,"h":24},
+	"frame": {"x":1275,"y":1,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":21,"h":24},
-	"sourceSize": {"w":21,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_7.png":
 {
-	"frame": {"x":24,"y":209,"w":21,"h":24},
+	"frame": {"x":1275,"y":99,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":21,"h":24},
-	"sourceSize": {"w":21,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_8.png":
 {
-	"frame": {"x":27,"y":1,"w":21,"h":24},
+	"frame": {"x":1373,"y":1,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":21,"h":24},
-	"sourceSize": {"w":21,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_9.png":
 {
-	"frame": {"x":27,"y":27,"w":21,"h":24},
+	"frame": {"x":1373,"y":99,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":21,"h":24},
-	"sourceSize": {"w":21,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_10.png":
 {
-	"frame": {"x":1,"y":131,"w":21,"h":24},
+	"frame": {"x":1,"y":99,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":21,"h":24},
-	"sourceSize": {"w":21,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_11.png":
 {
-	"frame": {"x":27,"y":53,"w":12,"h":24},
+	"frame": {"x":99,"y":1,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":24},
-	"sourceSize": {"w":12,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_12.png":
 {
-	"frame": {"x":27,"y":79,"w":12,"h":24},
+	"frame": {"x":99,"y":99,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":24},
-	"sourceSize": {"w":12,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_13.png":
 {
-	"frame": {"x":27,"y":105,"w":12,"h":24},
+	"frame": {"x":197,"y":1,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":24},
-	"sourceSize": {"w":12,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_14.png":
 {
-	"frame": {"x":41,"y":53,"w":12,"h":24},
+	"frame": {"x":197,"y":99,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":24},
-	"sourceSize": {"w":12,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_15.png":
 {
-	"frame": {"x":41,"y":79,"w":12,"h":24},
+	"frame": {"x":295,"y":1,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":24},
-	"sourceSize": {"w":12,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_16.png":
 {
-	"frame": {"x":50,"y":1,"w":6,"h":24},
+	"frame": {"x":295,"y":99,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":6,"h":24},
-	"sourceSize": {"w":6,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_17.png":
 {
-	"frame": {"x":50,"y":27,"w":6,"h":24},
+	"frame": {"x":393,"y":1,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":6,"h":24},
-	"sourceSize": {"w":6,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_18.png":
 {
-	"frame": {"x":55,"y":53,"w":6,"h":24},
+	"frame": {"x":393,"y":99,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":6,"h":24},
-	"sourceSize": {"w":6,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_19.png":
 {
-	"frame": {"x":55,"y":79,"w":6,"h":24},
+	"frame": {"x":491,"y":1,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":6,"h":24},
-	"sourceSize": {"w":6,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_20.png":
 {
-	"frame": {"x":55,"y":105,"w":6,"h":24},
+	"frame": {"x":589,"y":1,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":6,"h":24},
-	"sourceSize": {"w":6,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_21.png":
 {
-	"frame": {"x":41,"y":105,"w":12,"h":24},
+	"frame": {"x":589,"y":99,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":24},
-	"sourceSize": {"w":12,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_22.png":
 {
-	"frame": {"x":47,"y":131,"w":12,"h":24},
+	"frame": {"x":687,"y":1,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":24},
-	"sourceSize": {"w":12,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_23.png":
 {
-	"frame": {"x":47,"y":157,"w":12,"h":24},
+	"frame": {"x":687,"y":99,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":24},
-	"sourceSize": {"w":12,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_24.png":
 {
-	"frame": {"x":47,"y":183,"w":12,"h":24},
+	"frame": {"x":785,"y":1,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":24},
-	"sourceSize": {"w":12,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_25.png":
 {
-	"frame": {"x":47,"y":209,"w":12,"h":24},
+	"frame": {"x":785,"y":99,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":24},
-	"sourceSize": {"w":12,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_26.png":
 {
-	"frame": {"x":1,"y":157,"w":21,"h":24},
+	"frame": {"x":883,"y":1,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":21,"h":24},
-	"sourceSize": {"w":21,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_27.png":
 {
-	"frame": {"x":1,"y":183,"w":21,"h":24},
+	"frame": {"x":883,"y":99,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":21,"h":24},
-	"sourceSize": {"w":21,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_28.png":
 {
-	"frame": {"x":1,"y":209,"w":21,"h":24},
+	"frame": {"x":981,"y":1,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":21,"h":24},
-	"sourceSize": {"w":21,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_29.png":
 {
-	"frame": {"x":24,"y":131,"w":21,"h":24},
+	"frame": {"x":981,"y":99,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":21,"h":24},
-	"sourceSize": {"w":21,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 },
 "rodar_30.png":
 {
-	"frame": {"x":24,"y":157,"w":21,"h":24},
+	"frame": {"x":1079,"y":99,"w":96,"h":96},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":21,"h":24},
-	"sourceSize": {"w":21,"h":24},
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96},
 	"pivot": {"x":0.5,"y":0.5}
 }},
 "meta": {
 	"app": "https://www.codeandweb.com/texturepacker",
 	"version": "1.0",
-	"image": "moeda.png",
+	"image": "coin.png",
 	"format": "RGBA8888",
-	"size": {"w":62,"h":234},
-	"scale": "0.25",
-	"smartupdate": "$TexturePacker:SmartUpdate:9878ba653c7a231f726bf4b206329cf9:d742db019543cd3ada82868f9faf0f8c:6fa8fc7e3c4573d86887fe7e3da5ba3f$"
+	"size": {"w":1470,"h":196},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:96eb29fa975f31e97a62b7a55ea3bd76:8fa00db50edd6fce5ca706fe2c596563:37dcde439de7f7292f96409a4c62c08e$"
 }
 }
