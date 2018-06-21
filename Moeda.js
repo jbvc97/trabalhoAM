@@ -31,21 +31,18 @@ var Moeda = Entity.extend(function () {
 
 		this.update = function () {
 
-			if (this.currState == this.states.RODAR && this.currentFrame == this.frames.length )
-				return;
+
 
 			// passar � proxima frame e voltar a zero se chegar ao fim do array; M�todo mais eficiente pois utiliza s� opera��es
 			// aritm�ticas e n�o recorre a condi��es
 
 			this.currentFrame = (++this.currentFrame) % this.frames.length;
 
-			this.width = this.frames[this.currentFrame].width; //atualizar a altura
+			this.width = this.frames[this.currentFrame].width ; //atualizar a altura
 			this.height = this.frames[this.currentFrame].height; // atualizar os
 
 
-			if (this.currState === this.states.ATACAR && this.currentFrame == this.frames.length - 1) {
-				this.parar();
-			}
+
 
 		};
 
@@ -63,7 +60,8 @@ var Moeda = Entity.extend(function () {
 			console.log(this.spriteSheet.getStats('rodar'));
 			this.width = this.frames[0].width; //atualizar a altura
 			this.height = this.frames[0].height; // atualizar os
-
+			console.log(	this.width);
+			console.log(	this.height);
 			// atualizar o array de frames atual
 
 		}.bind(this);
