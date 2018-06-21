@@ -119,21 +119,6 @@
     canvases.entities.drawingSurface.save();
     canvases.entities.drawingSurface.translate(-camera.x, -camera.y);
 
-
-    if (teclas[keyboard.LEFT]) {
-      player.x -= 5;
-    }
-    if (teclas[keyboard.RIGHT]) {
-      player.x += 5;
-    }
-    if (teclas[keyboard.UP]) {
-      player.y -= 5;
-    }
-
-    if (teclas[keyboard.DOWN]) {
-      player.y += 5;
-    }
-
     player.render(canvases.entities.drawingSurface);
     player.drawColisionBoundaries(canvases.entities.drawingSurface, true, true, "red", "blue");
     camera.drawFrame(canvases.entities.drawingSurface, true);
