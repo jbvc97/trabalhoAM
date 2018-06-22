@@ -1,0 +1,21 @@
+{"frames": {
+
+"porta.png":
+{
+	"frame": {"x":1,"y":1,"w":16,"h":96},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":96},
+	"sourceSize": {"w":16,"h":96},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "porta.png",
+	"format": "RGBA8888",
+	"size": {"w":18,"h":98},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:45e0b4d1d9c93cfb38bdc17ab9fca43f:688c4dbb61da5e1427def0595ab9762e:1898b3a38156fec18d35b0988c4a53c1$"
+}
+}

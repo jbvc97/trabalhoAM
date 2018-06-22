@@ -1,32 +1,35 @@
-var Moeda = Entity.extend(function () {
+var Terreno = Entity.extend(function () {
 		this.currState = undefined; // estado atual;
 
-		var podeDisparar = false;
+		var xa = 0;
+		var ya=0;
 		this.states = {
-			RODAR: 'rodar'
+			NADA: 'auxiliar',
 
 		};
 
-		this.constructor = function (spriteSheet, x, y) {
+		this.constructor = function (spriteSheet, x, y ,height, width) {
 			this.super();
 			this.x = x;
 			this.y = y;
+			this.xa=width;
+			this.ya=height;
 			this.spriteSheet = spriteSheet;
-			this.currState = this.states.RODAR;
+			this.currState = this.states.NADA;
 			this.currentFrame = 0;
 			setup();
 		};
 		this.render = function (ds) {
 			if (!this.active) return;
-
 			var sprite = this.getSprite();
 			ds.drawImage
 			(
 				this.spriteSheet.img,
 				sprite.x, sprite.y,
-				sprite.width, sprite.height,
+				this.xa, this.ya,
 				Math.floor(this.x), Math.floor(this.y),
 				Math.floor(this.width), Math.floor(this.height));
+
 
 		};
 
@@ -39,8 +42,9 @@ var Moeda = Entity.extend(function () {
 
 			this.currentFrame = (++this.currentFrame) % this.frames.length;
 
-			this.width = this.frames[this.currentFrame].width ; //atualizar a altura
-			this.height = this.frames[this.currentFrame].height; // atualizar os
+			this.width = this.xa; //atualizar a altura
+			this.height = this.ya; // atualizar os
+
 
 
 
@@ -53,7 +57,7 @@ var Moeda = Entity.extend(function () {
 
 		var setup = function () {
 
-			this.eStates['rodar'] = this.spriteSheet.getStats('rodar');
+			this.eStates['auxiliar'] = this.spriteSheet.getStats('auxiliar');
 
 
 

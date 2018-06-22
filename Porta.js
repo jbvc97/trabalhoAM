@@ -1,9 +1,9 @@
-var Moeda = Entity.extend(function () {
+var Porta = Entity.extend(function () {
 		this.currState = undefined; // estado atual;
 
 		var podeDisparar = false;
 		this.states = {
-			RODAR: 'rodar'
+			PORTA: 'porta'
 
 		};
 
@@ -12,7 +12,7 @@ var Moeda = Entity.extend(function () {
 			this.x = x;
 			this.y = y;
 			this.spriteSheet = spriteSheet;
-			this.currState = this.states.RODAR;
+			this.currState = this.states.PORTA;
 			this.currentFrame = 0;
 			setup();
 		};
@@ -53,14 +53,13 @@ var Moeda = Entity.extend(function () {
 
 		var setup = function () {
 
-			this.eStates['rodar'] = this.spriteSheet.getStats('rodar');
+			this.eStates['porta'] = this.spriteSheet.getStats('porta');
 
 
 
 			this.frames = this.eStates[this.currState];
-			console.log(this.spriteSheet.getStats('rodar'));
-			this.width = this.frames[0].width; //atualizar a altura
-			this.height = this.frames[0].height; // atualizar os
+			this.width = this.frames[0].width/2; //atualizar a altura
+			this.height = this.frames[0].height/2; // atualizar os
 
 			// atualizar o array de frames atual
 

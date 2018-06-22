@@ -20,6 +20,8 @@
 	};
 	var osInimigos = [];
 	var asMoedas = [];
+	var osTerrenos = [];
+	var asPortas = [];
 	var entities = [];
 	var teclas = new Array(255);
 
@@ -83,7 +85,15 @@
 		var spPlayer = new SpriteSheet();
 		spPlayer.load("./assets/character/character.png", "./assets/character/character.json", loaded);
 		assets.push(spPlayer);
-	console.log(spPlayer);
+
+		var spAuxiliar = new SpriteSheet();
+		spAuxiliar.load("./assets/mapa/auxiliar.png", "./assets/mapa/auxiliar.json", loaded);
+		assets.push(spAuxiliar);
+
+		var spPorta = new SpriteSheet();
+		spPorta.load("./assets/mapa/porta.png", "./assets/mapa/porta.json", loaded);
+		assets.push(spPorta);
+	console.log(spAuxiliar);
 	}
 
 	function loaded(assetName) {
@@ -126,6 +136,15 @@
 		var inimigos=tileBackground.getLayerByName("inimigo").objects;
 		var moedas=tileBackground.getLayerByName("moedas").objects;
 		var player=tileBackground.getLayerByName("player").objects;
+		var terreno=tileBackground.getLayerByName("terreno").objects;
+		var porta=tileBackground.getLayerByName("porta").objects;
+		for(umaEntidade of porta){
+
+			var umaPorta = new Porta(gSpriteSheets['./assets/mapa/porta.png'],umaEntidade.x,umaEntidade.y);
+				asPortas.push(umaPorta);
+				entities.push(umaPorta);
+
+		}
 
 		for(umaEntidade of player){
 
@@ -149,6 +168,16 @@
 				entities.push(umaMoeda);
 
 		}
+
+
+		for(umaEntidade of terreno){
+
+			var umTerreno = new Terreno(gSpriteSheets['./assets/mapa/auxiliar.png'],umaEntidade.x,umaEntidade.y,umaEntidade.height,umaEntidade.width);
+				osTerrenos.push(umTerreno);
+				entities.push(umTerreno);
+
+		}
+
 
 
 
@@ -208,7 +237,7 @@
 		);
 		for(entity of entities){
 			entity.render(canvases.background.ctx);
-			entity.drawColisionBoundaries(canvases.background.ctx,true,true, "blue","red");
+			entity.drawColisionBoundaries(canvases.background.ctx,true,false, "blue","red");
 		}
 
 	}
